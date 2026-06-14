@@ -1,2 +1,16 @@
-# restyar-api-docs
-Official REST API Documentation and Open API Specification for RestYar F&amp;B Platform.
+# 📖 مستندات فنی و اتصال به API رستیار (Restyar API Reference)
+
+به راهنما و مستندات رسمی پلتفرم ابری رستیار خوش آمدید. این مستندات به برنامه‌نویسان و کسب‌وکارهای زنجیره‌ای کمک می‌کند تا سیستم‌های حسابداری، وب‌سایت‌های اختصاصی یا سخت‌افزارهای خود را به هسته مرکزی و هوشمند رستیار متصل کنند.
+
+---
+
+## 🔐 نحوه احراز هویت (Authentication)
+
+تمام درخواست‌ها به API رستیار باید حاوی یک کلید اختصاصی به نام `X-Restyar-API-Key` در هدر (HTTP Header) باشند. برای دریافت این کلید، به پنل مدیریت رستیار (Backoffice) -> بخش تنظیمات -> کلیدهای توسعه‌دهندگان مراجعه کنید.
+
+> ⚠️ **نکته امنیتی:** کلید API خود را هرگز در کدهای سمت کلاینت (مثل جاوااسکریپت عمومی) قرار ندهید. تمامی درخواست‌ها باید از سمت سرور شما ارسال شوند.
+
+```http
+X-Restyar-API-Key: YOUR_PRODUCTION_API_KEY
+Content-Type: application/json
+Accept: application/json
