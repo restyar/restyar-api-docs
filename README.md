@@ -41,3 +41,10 @@ curl -X POST [https://api.restyar.ir/v1/orders](https://api.restyar.ir/v1/orders
          {"item_id": "latte", "quantity": 1}
        ]
      }'
+
+## 🗓️ نقشه راه مستندات (Documentation Roadmap)
+ما در حال نهایی‌سازی مستندات فنی هستیم تا بهترین تجربه اتصال را برای شما فراهم کنیم:
+- [x] طراحی معماری API (نسخه ۱.۰)
+- [ ] انتشار مستندات Endpoints (بزودی - Q3 2026)
+- [ ] انتشار SDKهای اختصاصی (بزودی)
+- [ ] راه‌اندازی محیط Sandbox برای تست
